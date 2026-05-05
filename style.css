@@ -1,0 +1,441 @@
+/* COLOR PALLETE 
+
+TYPOGRAPHY
+FONT SIZES
+6.2rem/4.8rem/4.0rem/3.2rem/2.4rem/2.0rem/1.6rem/1.2rem
+
+FONT-WEIGHT
+400/700
+
+LINE HEIGHTS
+1.2/1.5
+
+SPACING SYSTEM
+5px /10px /15px /20px /25px /30px /40px /50px
+
+FONT FAMILY
+'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+*/
+
+/* GLOBAL STYLES */
+:root{
+    /*-----FONT SIZE----- */
+--text-sm: 1.2rem;
+--text-base: 1.6rem;
+--text-paragraph: 2.0rem;
+--text-h5: 2.4rem;
+--text-h4: 3.2rem;
+--text-h3: 4.0rem;
+--text-h2: 4.8rem;
+--text-h1: 9rem;
+
+/* ----FONT WEIGHT----  */
+--font-weight: 400;
+--font-weight-bold: 700;
+
+/* LINE HEIGHT*/
+--line-height-tight: 1.2;
+--line-height-normal: 1.5;
+
+/* LETTER SPACING */
+--letter-spacing-tight: -2px;
+
+/* FONT FAMILY */
+--font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+/* COLORS */
+--bg-primary: #1c1c1e;
+    --bg-secondary: #232325;
+    --bg-card: #2c2c2e;
+    --bg-card-hover: #343436;
+    --accent-copper: #b87333;
+    --accent-copper-light: #c9845a;
+    --accent-gradient: linear-gradient(135deg, #b87333 0%, #d4945a 50%, #c9845a 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #c9845a 0%, #daa57a 50%, #d4945a 100%);
+    --text-primary: #f5f0e8;
+    --text-secondary: #a8a8a8;
+    --text-muted: #6e6e6e;
+    --gain: #6b8e6b;
+    --loss: #c27878;
+    --border: #3a3a3c;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --chart-grid: rgba(255, 255, 255, 0.05);
+    --overlay: rgba(0, 0, 0, 0.5);
+
+    [data-theme="light"] {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f0f2;
+    --accent-copper: #d4945a;
+    --accent-copper-light: #e8b88a;
+    --accent-gradient: linear-gradient(135deg, #d4945a 0%, #e8b88a 50%, #f0c89a 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #e8b88a 0%, #f0c89a 50%, #f5d4a8 100%);
+    --text-primary: #1c1c1e;
+    --text-secondary: #6e6e6e;
+    --text-muted: #9a9a9a;
+    --gain: #5a9a5a;
+    --loss: #c76b6b;
+    --border: #e0e0e2;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --chart-grid: rgba(0, 0, 0, 0.05);
+    --overlay: rgba(0, 0, 0, 0.5);
+}
+
+
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+     font-family: var(--font-family);
+    font-size: 1.8rem;
+    line-height: var(--line-height-normal);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: var(--font-weight);
+      
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    font-family: var(--font-family);
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: var(--text-h1);
+    line-height: 100%;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -1px;
+    margin: 1.6rem 0;  
+}
+
+h2{
+    text-align: center;
+    font-size: var(--text-h2);
+}
+
+h3{
+    text-align: center;
+    font-size: var(--text-h3);
+}
+
+h4{
+    text-align: center;
+    font-size: var(--text-h4) ;
+}
+
+h5{
+    text-align: center;
+    font-size: var(--text-h5);
+}
+
+a{
+    text-decoration: none;
+    font-size: var(--text-paragraph);
+    display: inline-block;
+    color: var(--text-primary);
+}
+
+ul{
+    list-style: none;
+    font-size: var(--text-paragraph);
+}
+
+p, a{
+    font-size: var(--text-paragraph);
+    font-weight: var(--font-weight);
+    margin: 2.4, 0;   
+    color: var(--text-primary);;
+}
+
+img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="email"]{
+    font-size: var(--text-paragraph);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+
+/* LOGIN SECTION */
+.login-page{
+    display: flex;
+     
+
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: var(--accent-gradient);
+    overflow: hidden;
+    flex: 1 1 0%;
+    padding: 6rem;
+
+}
+
+.sub-container::before{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    animation: 15s ease-in-out 0s infinite normal none running float;
+}
+
+.sub-container::after{
+   content: "";
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 30%, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
+    animation: 20s ease-in-out 0s infinite reverse none running float;
+}
+
+
+
+.logo{
+    color: var(--bg-secondary);
+    width: 8rem;
+    height: 8rem;
+     background-color: rgba(28, 28, 30, 0.2);
+     border-radius: 1rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 3rem;
+}
+
+.logo-heading{
+    color: var(--bg-secondary);
+    margin-bottom: 3rem;
+}
+
+.logo-p{
+    color:var(--bg-secondary);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+/* Login Form */
+.login-form{
+    background-color: black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    
+}
+
+.login-heading{
+    margin-bottom: 3rem;
+
+}
+
+.login-p{
+    color: var(--text-muted)
+}
+
+.signing-container{
+    display: flex;
+    gap: 1rem;
+    width: 50rem;
+    background-color:  var(--bg-card);
+    align-items: center;
+    height: 6rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.sign-in{
+    background-color: var(--accent-copper);
+    width: 25rem;
+    height: 6rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-primary);
+}
+
+.sign-up{
+    width: 25rem;
+    height: 6rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-email{
+    text-align: left;
+    width: 50rem;
+}
+
+.email{
+    width:50rem;
+    height: 6rem;
+    background-color: var(--text-primary);
+    border-radius: 1.2rem;
+    padding-top: 1.6rem;
+    padding-left: 5rem;
+    padding-bottom: 1.6rem;
+     margin-bottom: 4rem;
+}
+
+.password{
+    width:50rem;
+    height: 6rem;
+    background-color: var(--text-primary);
+    border-radius: 1.2rem;
+    padding-top: 1.6rem;
+    padding-left: 5rem;
+    padding-bottom: 1.6rem;
+}
+
+.email:active{
+    border: solid 1px var(--accent-copper);
+}
+
+.password:active{
+    border: solid 1px var(--accent-copper);
+}
+
+.login-password{
+    text-align: left;
+    width: 50rem;
+}
+
+.login-reminder{
+    display: flex;
+    justify-content: space-between;
+    gap: 25rem;
+    
+}
+.remind-me{
+     font-size: 1.5rem;
+
+}
+.forgot-password{
+    color: var(--accent-copper);
+    font-size: 1.5rem;
+}
+
+.signing p{
+    display: flex;
+    gap: 1rem;
+    width: 50rem;
+     color: var(--bg-primary);
+    background-color:  var(--accent-copper);
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    
+}
+
+.divider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    /* margin: 1rem auto; */
+    margin-top: -5rem;
+    gap: 1rem;
+    margin-bottom: 2.4rem;
+}
+
+.line{
+    flex: 1;
+    height: .5px;
+    background-color: var(--text-muted);
+}
+
+.divider-container-p{
+    margin: 0 1.5rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: var(--text-muted);
+}
+.sign-in-options-container{
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 4rem;
+      
+}
+
+
+.sign-in-options{
+     width: 20rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: var(--bg-card-hover);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-options:hover{
+    border: solid 1px var(--accent-copper);
+}
+
+.sign-up-question{
+    color: var(--bg-card-hover);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 10rem;
+
+}
+.span-sign-up{
+    color: var(--accent-copper);
+}
+
+.sign-in-icons{
+    width: 3rem;
+}
+
+.footer-copyright{
+    color: var(--text-muted);
+     font-size: 1.6rem;
+}
+   
+
