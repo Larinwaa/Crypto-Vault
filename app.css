@@ -81,8 +81,7 @@
     display: flex;
     gap: 1rem;
     align-items: center; 
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin: 3rem ;
 }
 
 .dashboard-logo{
@@ -128,17 +127,34 @@
 }
 
 .nav-item.active{
-    background: var(--accent-gradient);
     color: #1c1c1e;
-    width: 20rem;
-    height: 5rem;
     border-radius: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    
 }
 
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon.active{
+     background: var(--accent-gradient);
+    color: #1c1c1e;
+    border-radius: .5rem;
+    display: flex;
+    width: 20rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.grid-icon{
+    width: 2rem;
+     color: var(--text-muted);
+
+}
 
 .account{
     color: var(--text-muted);
@@ -191,6 +207,13 @@
     
 }
 
+.sub-dashboard-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem
+}
+
 .dashboard-header-logo{
     color: var(--bg-secondary);
     width: 4rem;
@@ -208,4 +231,28 @@
 .pro-trader{
     color: var(--text-muted);
     font-size: 1.4rem;
+}
+
+.dashboard-heading{
+    width: 20rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.dashboard-paragraph{
+    color: var(--text-muted);
+}
+
+.notification{
+    width: 7rem;
+    height: 5rem;
+      background-color: var(--text-secondary);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.notification-bell{
+    width: 4rem;
+    color: var(--text-muted) ;
 }
