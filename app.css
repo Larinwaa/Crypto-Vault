@@ -192,19 +192,14 @@
     justify-content: space-between;
 }
 
-.dashboard-button{
-    display: flex;
-    width: 25rem;
-    background-color: var(--bg-secondary);
-    border-radius: 2rem;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
+.dashboard-heading{
+    width: 20rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.dashboard-button:hover{
-    border-radius: solid 1px var(--accent-copper);
-    
+.dashboard-paragraph{
+    color: var(--text-muted);
 }
 
 .sub-dashboard-container{
@@ -212,6 +207,65 @@
     align-items: center;
     gap: 2rem;
     margin: 2rem
+}
+
+.search-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 25rem;
+}
+
+.search{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--bg-secondary);
+    border-radius: 1.5rem;
+    outline: none;
+    padding-left: 6rem;
+    border: solid 1px var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.search-icon{
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 1.2rem;
+    width: 5rem;
+}
+
+.search:focus{
+    border: solid 1px var(--accent-copper);
+}
+
+.notification{
+    width: 7rem;
+    height: 5rem;
+      background-color: var(--bg-secondary);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.notification-bell{
+    width: 4rem;
+    color: var(--text-muted) ;
+}
+
+.dashboard-button:hover{
+    border: solid 1px var(--accent-copper);
+    
+}
+
+.dashboard-button{
+    display: flex;
+    width: 20rem;
+    background-color: var(--bg-secondary);
+    border-radius: 1rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .dashboard-header-logo{
@@ -225,7 +279,9 @@
      justify-content: center;
      align-items: center;  
      margin-right: 2rem;
-
+}
+.dashboard-p{
+    font-size: 1.5rem;
 }
 
 .pro-trader{
@@ -233,26 +289,20 @@
     font-size: 1.4rem;
 }
 
-.dashboard-heading{
-    width: 20rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+/* RIGHT SIDE */
+.content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 28rem;
 }
 
-.dashboard-paragraph{
-    color: var(--text-muted);
+.chart-container{
+    display: grid;
+    
 }
 
-.notification{
-    width: 7rem;
-    height: 5rem;
-      background-color: var(--text-secondary);
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
+.sub-chart-container{
+    width: 50rem;
+    background-color: green;
 }
 
-.notification-bell{
-    width: 4rem;
-    color: var(--text-muted) ;
-}
+
