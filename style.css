@@ -185,8 +185,6 @@ ul{
 /* LOGIN SECTION */
 .login-page{
     display: flex;
-     
-
 }
 
 .sub-container{
@@ -439,3 +437,61 @@ ul{
 }
    
 
+/* MEDIA QUERY */
+
+@media (max-width: 77rem){
+    html{
+        font-size: 56.25%;
+        /* 9/16x100=56.25% */
+    }
+
+    .login-form{
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 65rem){
+    html{
+        font-size: 50%;
+        /* 8/16x100=50% */
+    }
+
+    .login-form{
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 55rem){
+    html{
+        font-size: 43.75%;
+        /* 7/16x100=43.75% */
+    }
+
+    .login-page{
+    display: flex;
+    
+
+     }
+
+    .login-form{
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 46.5rem){
+    html{
+        font-size: 37.5%;
+        /* 6/16x100=37.5% */
+    }
+
+    .login-page{
+    display: flex;
+    flex-direction: column;
+    
+
+     }
+
+    .login-form{
+        padding: 6rem;
+    }
+}
