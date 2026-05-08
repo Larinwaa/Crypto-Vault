@@ -290,19 +290,120 @@
 }
 
 /* RIGHT SIDE */
-.content-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 28rem;
+
+
+.charts{
+    width: 50rem;
+    background-color: var(--bg-secondary);
+    padding: 5rem;
+    border-radius: 2rem;
+    margin: 3rem;
+
 }
 
+.portfolio-overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+}
+
+.portfolio-overview-days{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+}
+
+.candle-stick{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nested-candle-stick{
+    display: flex;
+    gap: 1rem;
+}
+
+/* STAT-RIGHT */
 .chart-container{
     display: grid;
-    
+    grid-template-columns: 1fr 1fr ;
 }
 
-.sub-chart-container{
-    width: 50rem;
-    background-color: green;
+.start-right-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card{
+    width:25rem;
+    height: 15rem;
+    background-color: var(--accent-copper);
+    border-radius: 2rem;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    margin: 3rem;
+}
+
+.stat-card-inactive{
+     width:25rem;
+    height: 15rem;
+    background-color: var(--bg-secondary);
+    border-radius: 2rem;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    margin: 3rem;
+}
+.stat-span{
+    color: var(--gain);
+}
+.stat-card-inactive:hover{
+    border: solid 1px var(--accent-copper);
+}
+
+.start-card-text{
+   flex: 1 1 0;
+   
+}
+
+.stat-card-p{
+     color: var(--text-primary);
+    font-size: 1.5rem;
+
+}
+
+.start-card-p-inactive{
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.dollar-container{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--bg-secondary);
+   display: flex;
+   border-radius: 1rem;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.dollar-container-inactive{
+     width: 5rem;
+    height: 5rem;
+    background-color: var(--accent-copper-light);
+   display: flex;
+   border-radius: 1rem;
+   justify-content: center;
+   align-items: center;
+
+
 }
 
 
