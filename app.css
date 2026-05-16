@@ -293,9 +293,9 @@
 
 
 .charts{
-    width: 50rem;
+    width: 40rem;
     background-color: var(--bg-secondary);
-    padding: 5rem;
+    padding: 1rem 2rem;
     border-radius: 2rem;
     margin: 3rem;
 
@@ -304,7 +304,7 @@
 .portfolio-overview{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: var(--text-muted);
     font-size: 1.5rem;
 }
@@ -312,8 +312,10 @@
 .portfolio-overview-days{
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
     color: var(--text-muted);
     font-size: 1.5rem;
+    gap: 1rem;
 }
 
 .candle-stick{
@@ -327,7 +329,7 @@
 }
 
 /* STAT-RIGHT */
-.chart-container{
+.chart-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr ;
 }
@@ -343,7 +345,7 @@
     background-color: var(--accent-copper);
     border-radius: 2rem;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
     margin: 3rem;
 }
@@ -404,6 +406,12 @@
    align-items: center;
 
 
+}
+
+.chart-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 28rem;
+    margin: 4rem;
 }
 
 
