@@ -78,7 +78,8 @@
 
 
             <!-- CHARTS -->
-             <!-- <div class="chart-grid-container"> -->
+             <div class="chart-grid-wrapper">
+               <div class="chart-grid-container">
 
                 <!-- FIRST BOX -->
                  <div class="charts">
@@ -146,7 +147,30 @@
 
 <!-- SECOND BOX -->
 
-<div></div>
+<div class="charts">
+    <ul class="portfolio-overview-days">
+        <li>Asset Performance</li>
+        <li>Week</li>
+        <li>Month</li>
+        <li>Year</li>
+    </ul>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" width="100%" height="100%">
+  <rect x="10" y="35" width="30" height="105" rx="4" fill="#a3e2c9"/>
+
+  <rect x="60" y="55" width="30" height="85" rx="4" fill="#a3e2c9"/>
+
+  <rect x="110" y="100" width="30" height="40" rx="4" fill="#f0b90b"/>
+
+  <rect x="160" y="30" width="30" height="110" rx="4" fill="#a3e2c9"/>
+
+  <rect x="210" y="90" width="30" height="50" rx="4" fill="#f4be6d"/>
+
+  <rect x="260" y="105" width="30" height="35" rx="4" fill="#f4be6d"/>
+
+  <rect x="310" y="80" width="30" height="60" rx="4" fill="#e2a3b7"/>
+</svg>
+</div>
             
 
 <!-- THIRD BOX -->
@@ -257,13 +281,9 @@
   <rect x="373" y="40" width="14" height="25" fill="#ff4d4d" rx="1"/>
 </svg>        
 </div>
-            </div>
+ </div>
 
-            
-
-            
-
-<!-- STAT-RIGHT -->
+ <!-- STAT-RIGHT -->
  <div class="stat-right-container">
     <div class="stat-card">
     <div class="start-card-text">
@@ -321,8 +341,356 @@
  </div>
    </div>
 
-             </div>
+   <!-- ASSET ALLOCATION -->
 
+   <div class="asset-allocation-container">
+    
+    <div class="asset-allocation-card">
+        <div>
+            <strong>Asset Allocation</strong>
+        </div>
+
+        <div class="asset-allocation-wrapper">
+            <div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <g transform="rotate(-90 60 60)">
+    <circle cx="60" cy="60" r="40" fill="none" stroke="#f0b90b" stroke-width="14" 
+            stroke-dasharray="100.53 251.32" stroke-dashoffset="0" />
+            
+    <circle cx="60" cy="60" r="40" fill="none" stroke="#5a8cf8" stroke-width="14" 
+            stroke-dasharray="62.83 251.32" stroke-dashoffset="-100.53" />
+            
+    <circle cx="60" cy="60" r="40" fill="none" stroke="#2ebd85" stroke-width="14" 
+            stroke-dasharray="50.26 251.32" stroke-dashoffset="-163.36" />
+            
+    <circle cx="60" cy="60" r="40" fill="none" stroke="#f4be6d" stroke-width="14" 
+            stroke-dasharray="37.70 251.32" stroke-dashoffset="-213.62" />
+  </g>
+</svg>
+        </div>
+
+        <!--  -->
+    <div>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 90" width="100%" height="100%">
+  <g transform="translate(0, 0)">
+    <circle cx="5" cy="10" r="4" fill="#f0b90b" />
+    <text x="18" y="14" fill="#ffffff" font-size=".7rem">BTC 40%</text>
+  </g>
+
+  <g transform="translate(0, 22)">
+    <circle cx="5" cy="10" r="4" fill="#5a8cf8" />
+    <text x="18" y="14" fill="#ffffff"  font-size=".7rem">ETH 25%</text>
+  </g>
+
+  <g transform="translate(0, 44)">
+    <circle cx="5" cy="10" r="4" fill="#2ebd85" />
+    <text x="18" y="14" fill="#ffffff"  font-size=".7rem">USDT 20%</text>
+  </g>
+
+  <g transform="translate(0, 66)">
+    <circle cx="5" cy="10" r="4" fill="#f4be6d" />
+    <text x="18" y="14" fill="#ffffff" font-size=".7rem">Other 15%</text>
+  </g>
+</svg>
+    </div> 
+        </div>
+        </div>
+
+        <div class="asset-allocation-card">
+            <div>
+                <strong>Portfolio Health</strong>
+            </div>
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8a5c2" />   <stop offset="50%" stop-color="#f5cd79" />  <stop offset="100%" stop-color="#a3e2c9" /> </linearGradient>
+  </defs>
+
+  <g transform="translate(100, 90)">
+    <path d="M -60 0 A 40 40 0 0 1 60 0" 
+          fill="none" 
+          stroke="#3d414d" 
+          stroke-width="10" 
+          stroke-linecap="round" />
+
+    <path d="M -60 0 A 60 60 0 0 1 60 0" 
+          fill="none" 
+          stroke="url(#gaugeGradient)" 
+          stroke-width="10" 
+          stroke-linecap="round"
+          stroke-dasharray="160.2 377" />
+
+    <text x="0" y="25" 
+          fill="#ffffff" 
+          font-weight="bold" 
+          font-size="2rem" 
+          text-anchor="middle">85%</text>
+          
+    <text x="0" y="45" 
+          fill="#a3a7b5" 
+          font-family="sans-serif" 
+          font-size="11" 
+          text-anchor="middle">Excellent</text>
+  </g>
+</svg>
+</div>
+</div>
+
+<div class="asset-allocation-card">
+    <div>
+    <strong>Risk Level</strong>
+    </div>
+
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 110" width="100%" height="100%">
+  <g transform="translate(70, 65)">
+    <path d="M -40 0 A 40 40 0 0 1 40 0" 
+          fill="none" 
+          stroke="#414755" 
+          stroke-width="8" 
+          stroke-linecap="round" />
+
+    <path d="M -40 0 A 40 40 0 0 1 40 0" 
+          fill="none" 
+          stroke="#a3e2c9" 
+          stroke-width="8" 
+          stroke-linecap="round"
+          stroke-dasharray="44.0 251.3" />
+
+    <circle cx="-18.1" cy="-35.6" r="5" fill="#f5cd79" />
+
+    <text x="0" y="20" 
+          fill="#ffffff" 
+          font-family="sans-serif" 
+          font-weight="bold" 
+          font-size="18" 
+          text-anchor="middle">35%</text>
+          
+    <text x="0" y="34" 
+          fill="#a3a7b5" 
+          font-family="sans-serif" 
+          font-size="9" 
+          text-anchor="middle">Moderate</text>
+  </g>
+</svg>
+    </div>
+</div>
+    </div>
+
+    <!-- RECENT TRANSACTIONS -->
+    <div class="recent-transactions-container">
+        <div class="recent-transactions-card">
+            <div class="recent-transactions">
+                <strong>Recent Transactions</strong>
+                <span class="view-all">View all</span>
+            </div>
+
+            <div class="transaction-outline-wrapper">
+                <div class="transaction-outline">
+                <div class="gain-card"></div>
+                <strong>Buy BTC <br> <p class="gain-span">Today, 2:45PM</p></strong>
+            </div>
+            <div class="transaction-p"><p>+0.0234BTC</p></div>
+            </div>
+
+            <!--  -->
+            <div class="transaction-outline-wrapper">
+                <div class="transaction-outline">
+                <div class="loss-card"></div>
+                <strong>Sell ETH <br> <p class="gain-span">Today, 11:20AM</p></strong>
+            </div>
+            <div class="transaction-loss"><p>-0.805 ETH</p></div>
+            </div>
+
+            <!--  -->
+
+            <div class="transaction-outline-wrapper">
+                <div class="transaction-outline">
+                <div class="transfer-card"></div>
+                <strong>Transfer USDT <br> <p class="gain-span">Yesterday</p></strong>
+            </div>
+            <div class="transfer"><p>500 USDT</p></div>
+            </div>
+
+            <!--  -->
+
+            <div class="transaction-outline-wrapper">
+                <div class="transaction-outline">
+                <div class="gain-card"></div>
+                <strong>Buy SOL <br> <p class="gain-span">Dec 25, 2025</p></strong>
+            </div>
+            <div class="transaction-p"><p>+15.5 SOL</p></div>
+            </div>
+            </div>
+
+             <!-- SECOND BOX  -->
+
+            <div class="recent-transactions-card">
+                <div class="top-movers-header">
+                    <div>
+                    <strong>Top Movers</strong>
+                </div>
+
+                <div>
+                    <ul class="transfer-button">
+                        <li class="gainers">Gainers</li>
+                        <li class="losers">Losers</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">1</div>
+                    <div class="sol-logo"></div>
+                    <strong>Solana <br> <p class="top-mover-p">SOL</p></strong>
+                </div>
+
+                <div>
+                    <strong>$98.42 <br> <p class="topmover-gainer">+12.4%</p></strong>
+                </div>
+                </div>
+                
+
+                <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">2</div>
+                    <div class="sol-logo"></div>
+                    <strong>Dogecoin <br> <p class="top-mover-p">DOGE</p></strong>
+                </div>
+
+                <div>
+                    <strong>$0.082 <br> <p class="topmover-gainer">+8.5%</p></strong>
+                </div>   
+        </div>
+
+
+        <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">3</div>
+                    <div class="sol-logo"></div>
+                    <strong>Bitcoin <br> <p class="top-mover-p">BTC</p></strong>
+                </div>
+
+                <div>
+                    <strong>$43,256 <br> <p class="topmover-gainer">+8.2%</p></strong>
+                </div>
+
+                
+    </div>
+
+
+    <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">4</div>
+                    <div class="sol-logo"></div>
+                    <strong>Ethereum <br> <p class="top-mover-p">ETH</p></strong>
+                </div>
+
+                <div>
+                    <strong>$2,284 <br> <p class="topmover-gainer">+6.5%</p></strong>
+                </div>
+            </div>
+
+
+            <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">5</div>
+                    <div class="sol-logo"></div>
+                    <strong>Cardano <br> <p class="top-mover-p">ADA</p></strong>
+                </div>
+
+                <div>
+                    <strong>$0.52 <br> <p class="topmover-gainer">+5.1%</p></strong>
+                </div>
+
+   
+
+   </div>
+
+   
+    </div>
+
+<div class="recent-transactions-card">
+                <div class="top-movers-header">
+                    <div>
+                    <strong>Top Movers</strong>
+                </div>
+
+                <div>
+                    <ul class="transfer-button">
+                        <li class="gainers">Gainers</li>
+                        <li class="losers">Losers</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">1</div>
+                    <div class="sol-logo"></div>
+                    <strong>Solana <br> <p class="top-mover-p">SOL</p></strong>
+                </div>
+
+                <div>
+                    <strong>$98.42 <br> <p class="topmover-gainer">+12.4%</p></strong>
+                </div>
+                </div>
+                
+
+                <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">2</div>
+                    <div class="sol-logo"></div>
+                    <strong>Dogecoin <br> <p class="top-mover-p">DOGE</p></strong>
+                </div>
+
+                <div>
+                    <strong>$0.082 <br> <p class="topmover-gainer">+8.5%</p></strong>
+                </div>   
+        </div>
+
+
+        <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">3</div>
+                    <div class="sol-logo"></div>
+                    <strong>Bitcoin <br> <p class="top-mover-p">BTC</p></strong>
+                </div>
+
+                <div>
+                    <strong>$43,256 <br> <p class="topmover-gainer">+8.2%</p></strong>
+                </div>
+
+                
+    </div>
+
+
+    <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">4</div>
+                    <div class="sol-logo"></div>
+                    <strong>Ethereum <br> <p class="top-mover-p">ETH</p></strong>
+                </div>
+
+                <div>
+                    <strong>$2,284 <br> <p class="topmover-gainer">+6.5%</p></strong>
+                </div>
+            </div>
+
+
+            <div class="top-movers-wrapper">
+                    <div class="top-movers">
+                    <div class="number-container">5</div>
+                    <div class="sol-logo"></div>
+                    <strong>Cardano <br> <p class="top-mover-p">ADA</p></strong>
+                </div>
+
+                <div>
+                    <strong>$0.52 <br> <p class="topmover-gainer">+5.1%</p></strong>
+                </div>
 
     </div>
     

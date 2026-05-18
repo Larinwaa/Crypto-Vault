@@ -295,10 +295,11 @@
 .charts{
     width: 40rem;
     background-color: var(--bg-secondary);
-    padding: 1rem 2rem;
+    padding: 2rem;
+    padding-bottom: 7rem;
+    padding-top: 2rem;
     border-radius: 2rem;
     margin: 3rem;
-
 }
 
 .portfolio-overview{
@@ -410,8 +411,160 @@
 
 .chart-grid-container{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+}
+
+.chart-grid-wrapper{
+    display: grid;
     grid-template-columns: 1fr 28rem;
-    margin: 4rem;
+}
+
+/* ASSET ALLOCATION */
+.asset-allocation-container{
+    display: flex;
+}
+
+.asset-allocation-card{
+    width: 40rem;
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 1rem;
+}
+
+.asset-allocation-wrapper{
+    display: flex;
+    gap: 2rem;
+}
+
+/* RECENT TRANSACTION */
+.recent-transactions-card{
+    width: 60rem;
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 3rem;
+    padding-bottom: 10rem;
+}
+
+.recent-transactions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+}
+
+.view-all{
+    color: var(--accent-copper);
+   
+}
+
+.transaction-outline-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.transaction-outline{
+    display: flex;
+    gap: 1rem;
+    
+}
+.transaction-p p{
+    display: flex;
+    color: var(--gain);
+}
+
+.transaction-loss p{
+    color: var(--loss);
+}
+
+.gain-span{
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+.gain-card{
+    width: 5rem;
+    height: 4rem;
+    background-color: var(--gain);
+    border-radius: 1rem;
+   
+}
+
+.loss-card{
+     width: 5rem;
+    height: 4rem;
+    background-color: var(--loss);
+    border-radius: 1rem;
+   
+
+}
+
+.transfer-card{
+     width: 5rem;
+    height: 4rem;
+    background-color: var(--accent-copper);
+    border-radius: 1rem;
+   
+}
+
+.transfer-button{
+    display: flex;
+    gap: 2rem;
+    width: 15rem;
+    background-color: #1c1c1e;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.gainers{
+    width: 6rem;
+    background-color: var(--accent-copper);
+    padding: .4rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.losers{
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    
+
+}
+
+.top-movers-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-container{
+    width: 3rem;
+    background-color: #b87333;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+
+.top-movers{
+    display: flex;
+    gap: 1rem;
+}
+
+.top-mover-p{
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
+.top-movers-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.topmover-gainer{
+    color: var(--gain);
+    font-size: 1.5rem;
 }
 
 
