@@ -7,7 +7,7 @@
 .crypto-management{
     display: flex;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin: 2rem;
 }
 
 
@@ -21,6 +21,7 @@
     border-radius: 2rem;
     gap: 2rem;
     color: var(--bg-primary);
+    padding: 2rem;
 
 }
 .bold-state{
@@ -43,6 +44,7 @@
     align-items: baseline;
     border-radius: 2rem;
     gap: 2rem;
+    padding: 2rem;
 
 }
 
@@ -59,6 +61,7 @@
 .call-to-action{
     display: flex;
     gap: 2rem;
+    margin: 2rem;
 
 }
 
@@ -71,6 +74,7 @@
     justify-content: center;
     align-items: center;
     color: var(--bg-primary);
+    padding: 1rem;
 }
 
 .cta-options-inactive{
@@ -82,6 +86,7 @@
     justify-content: center;
     align-items: center;
     color: var(--white);
+    padding: 1rem;
 
 }
 
@@ -103,6 +108,13 @@
     align-items: center;
     border-radius: 2rem;
     margin: 2rem;
+    padding: 2rem;
+}
+
+.your-wallet{
+    align-self: flex-start;
+    flex: none;
+    margin-top: 1rem;
 }
 
 .wallet-content-card{
@@ -128,9 +140,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     border-radius: 2rem;
-    height: 45rem;
+    height: 59rem;
     margin: 2rem;
 }
 .bitcoin-scan{
@@ -146,6 +158,7 @@
     border-radius: .5rem;
     text-align: center;
     color: var(--text-muted);
+    margin-top: 2rem;
 }
 
 .bitcoin-cta{
@@ -179,6 +192,72 @@
 }
 
 /* STAKING */
+.staking-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 130rem;
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
 .staking-card{
+    width: 60rem;
+    background-color: var(--bg-primary);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 30rem;
+    justify-content: center;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.staked{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.yeild{
+    font-size: 1.5rem;
+}
+
+.manage-stake{
+    width: 50rem;
+    border: solid 1px var(--accent-copper);
+    color: var(--accent-copper);
+    text-align: center;
+    background-color: var(--bg-secondary);
+    border-radius: 1rem;
     
+
+}
+
+.manage-stake:hover{
+    color: var(--bg-primary);
+    background-color: var(--accent-copper);
+}
+
+/* TRANSACTION */
+.transaction-main-container{
+    width: 130rem;
+    background-color: var(--bg-secondary);
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.divider-line{
+    background-color: rgb(255, 255, 255, 0.1);
+    height: 1px;
+    border: none;
+}
+
+.transaction-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
 }
