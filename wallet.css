@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.crypto-management{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.active-container{
+    width: 45rem;
+    background-color: var(--accent-copper);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+    color: var(--bg-primary);
+
+}
+.bold-state{
+    font-size: 3rem;
+}
+
+
+.active-state{
+    color: var(--bg-primary);
+    font-size: 1.5rem;
+}
+
+.inactive-container{
+     width: 45rem;
+    background-color: var(--bg-secondary);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 2rem;
+    gap: 2rem;
+
+}
+
+.muted-state{
+    color: var(--text-muted);
+    font-size: 1.5rem;
+}
+
+.gain{
+    color: var(--gain);
+    font-size: 1.5rem;
+}
+
+.call-to-action{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.cta-options{
+    width: 15rem;
+    background-color: var(--accent-copper);
+    border-radius: 1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-primary);
+}
+
+.cta-options-inactive{
+     width: 15rem;
+    background-color: var(--bg-secondary);
+    border-radius: 1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+
+}
+
+.inactive-container:hover{
+       border: 1px solid var(--accent-copper);
+
+}
+
+.cta-options-inactive:hover{
+    border: 1px solid var(--accent-copper);
+}
+
+.wallet-content-container{
+    width: 100rem;
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.wallet-content-card{
+    display: flex;
+    justify-content: space-between;
+    width: 90rem;
+    background-color: var(--bg-primary);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    
+}
+
+.wallet-content-card:hover{
+    background-color: var(--bg-secondary);
+}
+
+/* Receive Bitcoin */
+.bitcoin-container{
+    width: 40rem;
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 2rem;
+    height: 45rem;
+    margin: 2rem;
+}
+.bitcoin-scan{
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+.contact-address{
+    background-color: var(--bg-primary);
+    width: 35rem;
+    border-radius: .5rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.bitcoin-cta{
+    display: flex;
+    gap: 1rem;
+}
+
+.bitcoin-cta-inactive-btn{
+    width: 10rem;
+    height: 5rem;
+    background-color: var(--bg-primary);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitcoin-cta-active-btn{
+    width: 10rem;
+    background-color: var(--accent-copper);
+    color: var(--bg-primary);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet-content-main-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* STAKING */
+.staking-card{
+    
+}
